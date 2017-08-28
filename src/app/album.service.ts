@@ -8,13 +8,13 @@ export class AlbumService {
 
   constructor(private database: AngularFireDatabase) {
     this.albums = database.list('albums');
-   }
-   getAlbums(){
-   return this.albums;
- }
+  }
+  getAlbums(){
+    return this.albums;
+  }
 
- addAlbum(newAlbum: Album) {
-   this.albums.push(newAlbum);
- }
+  addAlbum(newAlbum: Album) {
+    this.albums.push(newAlbum);
+  }
 
 }
